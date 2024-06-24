@@ -1,0 +1,1119 @@
+Java -> 
+
+
+-> James Gosling 
+-> Write once run anywhere
+-> Green Talk (.gt)
+-> OKA Language (Trademark Issues) 
+
+=> Java Language 
+-> 1991 -> Java 1.0 
+-> 2008 -> Java 8 
+-> 2024 -> Java 22
+LTS(Long Term Support) Products:  Java 8, 11, 17, 21
+JDK-> Java Development Kit
+ =>JRE(Java Runtime Environment) & Java Compiler
+    JRE=> JVM(Java Virtual Machine) & Library files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Java Components(Alphabets/Members):
+
+
+
+
+-> Class
+-> Variable
+-> Method
+-> Constructor
+-> Block 
+-> Interface
+
+
+Java Concepts:
+-> Object Oriented Programming
+-> Exceptional Handling
+-> Collection Framework
+-> Stream API
+
+
+Object Oriented Programming: 
+=> Encapsulation
+=> inheritance
+=> polymorphism
+=> Abstraction 
+-> 
+
+Class : 
+	-> Collection of variables, methods, blocks, Constructors. 
+
+Keyword :  class
+
+Syntax: 
+
+class Class_name{
+   //variables
+   //methods
+   //blocks  
+   //constructors
+}
+
+Note: As Developers practice, it is preferred to start class name with upper case..
+
+
+Encapsulation : 
+    -> Binding multiple components into one component is known as Encapsulation 
+    -> Eg : Class, Interface
+
+
+
+Output methods: 
+
+		System.out.println()
+ 			-> prints the message and moves the console to next line
+		System.out.printf()
+		-> It Follows C programming Syntax 
+		System.out.print()
+		-> prints the message and make the console to stay in same line
+
+
+Main methods: 
+
+syntax: 
+ 
+ 	public static void main(String [] args)
+	{
+		
+	}
+
+
+Package:
+ Collection of multiple classes and interface is called of packages
+
+
+
+collection of different packages and other external source files is called Library/Project
+
+
+Data Types : 
+ -> Primitive 
+       ->keyword which allows to store single value 
+ -> Non Primitive 
+       ->keywords which allows to multiple values 
+	eg: class, interface
+
+
+Primitives: 
+   -> Numeric types:
+	-> Non Floating Values(Non Decimal Values):
+	 => byte
+     	 => short
+	 => int 
+	 => long 
+
+Terra Byte->Giga bytes -> Mega Bytes -> Kilo Bytes -> Bytes -> Bits
+
+byte :
+   size :: 1 byte or 8 bits memory 
+
+byte var = 1010;
+
+short : 
+  size :: 2 bytes or 16 bits memory
+
+short var1 = 1010101;
+
+
+int :
+ size :: 4 bytes or 32 bits memory
+  int var1 = 548786768
+
+long : 
+ size :: 8 bytes or 64 bits memory
+  long var2 = 265462854L; or l
+
+
+
+ int a = 10 
+ 
+ int c = a * 20 
+
+
+
+
+floating(Decimal) datatypes: 
+
+
+float -> 4 bytes -> 6 Decimal Values
+  
+ float var = 487.65f(or) 487.65F;
+
+
+double -> 8 bytes -> 15 Decimal values
+
+ double var1 = 5465.6486;
+
+char -> characters ->  2bytes 
+ 
+ char ch = 'a';
+ 
+ UNICODE -> Universal character encoding 
+   
+  -> hexadecimal representation of ASCII 
+
+ASCII -> American standard code for information interchange
+  
+
+Write a java program to calculate Gross Salary of an employee. 
+
+Gross salary :
+apply the simple formula to calculate the gross salary i.e. gross salary= basic salary+ dearness allowance+ house rent allowance.
+
+
+output 
+
+ Basic Sal : 15000/-
+ Dearness Allowance : 3000/-
+ House Rent Allowance : 5000/-
+ Gross Salary : Rs.23000/- 
+
+
+Write a java program to convert Total days to year, month and days. 
+input : 
+31
+Output : 
+0 years, 1 months, 1 days
+
+input : 366
+
+output : 
+1 years, 0 months, 1 days
+
+
+Boolean -> true /false -> 1 bit
+
+ boolean flag = true;
+
+Operators: 
+ => Symbols which perform actions
+
+-Arithematic operator
+  -> Uninary
+  -> Binary 
+  -> Terenary 
+-Assignment Operator
+-Relational/Conditional operator
+-Logical Operator
+-Bitwise Operators
+
+
+Uninary Operators: 
+ -> Increment operator (++)
+
+ -> Decrement Operator (--)
+
+ -> Value will be altered by 1
+
+ => Post / Pre 
+
+  Post : operand-operator  => Utilize than update
+    a--, b++
+
+  pre : operator-operand  => Update than utilise
+    ++c, --d 
+
+a = 31,		 b = 22,	 c = 12
+
+d = a++ + ++b - --c + c++ - -a + ++a 
+
+
+a = 121 b = 324 c = a-- + --b
+		
+a =   		b =  	 	 c = 
+
+d = c++ + --c + ++a - --b + b++ + a++ - ++c + --a - b++ 
+
+
+
+
+
+Binary operators: 
+ -> Addition, Subtraction, Multiplication, Division, Remainder
+
+ -> +, -, * , / , %
+
+ -> BODMAS 
+   -> Brackets
+   -> Order of
+   -> Division
+   -> Multilple
+   -> Addition
+   -> subtract
+
+Assignment operators: 
+ 
+ = , += , -=, *= ,/= ,%= , <<=, >>= 
+
+
+a = 100 
+
+a = a + 10 or a += 10; 
+
+a/=10
+
+a= 1
+
+Relational/Conditional Operators: 
+
+Operator which helps to compare to or more values 
+ 
+<,>,<=,>=,!=, ==(is equals to)
+
+return value will be boolean 
+
+Logical Operators: 
+
+ -> Logical And &&
+ -> Logical Or  ||
+ -> Logical not ! 
+
+-> return boolean 
+
+ conditon1  condition2       cond1 && Cond2   cond1 || cond2
+   false(0)	false(0)	false(0)	  false
+   true 	false		false		  true
+   false	true		false 		  true
+   true		true		true		  true
+
+
+Bitwise Operators: 
+ 
+ -> Bitwise And - &
+ -> Bitwise Or  - |
+ -> Bitwise Xor - ^
+ -> Left shift  - <<
+ -> Right Shift - >> 
+
+ -> Operator which perform actions on binary values are known as bitwise operators
+
+
+Special Operators: 
+
+-> new (Memory Creator)
+-> .   (membership Operator)
+
+ 
+ 
+Control Statements : 
+
+ -> Conditional / Decision Making / Selection Statements
+    => if else statements
+    => nested if statements
+    => Cascaded if else/ If else if ladder
+    => switch case 
+ -> Iterative / Looping Statements 
+    => for loop (Traditional)
+    => while loop
+    => do while loop
+ -> Jumping / Branching statements
+    => continue
+    => return
+    => break
+if else Statements:
+ 
+
+if (condition)
+ {
+	//statements
+ }
+else 
+ {
+	//statements
+ }
+
+Note: return type condition should be Boolean 
+
+
+
+Types of Variables : 
+ -> Static Variable
+ -> Non Static Variables
+    => Instance variables
+    => Local Variables 
+
+Static Variables: 
+ -> 
+
+Create a class Product and declare product_name,product_id, product_price as their members. Declare 2 product with their data and give output on all product details 
+
+
+
+
+Method: 
+
+returntype methodname(paralist)
+{
+   //statements
+}
+
+-> Static , Instance
+
+
+static returntype methodname(paralist)
+{
+   //statements
+}
+
+
+Constructors: 
+
+A method declared with class name is known as Constructor
+
+-> Constructor will not have return types
+
+
+Classname(paralist)
+{
+   //statements
+}
+
+
+-> It is auto executed when an instance is created
+
+
+
+
+Using member from different class. 
+
+
+-> Using Object
+-> Using Reference
+
+Using Object:
+
+
+Scanner class: 
+ -> java.util
+
+
+Scanner scan = new Scanner(System.in);
+
+datatype 		method Signature
+
+byte			public byte nextByte();
+short			public short nextShort();
+int			public int nextInt();
+long			public long nextLong();
+float			public float nextFloat();
+double			public double nextDouble();
+Boolean			public boolean nextBoolean();
+String			public java.lang.String next();
+			public java.lang.String nextLine();
+ 
+byte var = scan.nextByte()
+
+
+
+
+
+
+
+
+
+Wrapper Classes: 
+  -> Binding Primitive Datatype format into non primitives(Class)
+
+
+
+Primitive 	Non Primitive(Class)
+byte			Byte
+short			Short
+int			Integer
+long			Long
+float			Float
+double			Double
+char			Character
+boolean			Boolean
+
+https://bit.ly/ADT-Java
+
+String Classes: 
+
+java.lang
+   -> String
+   -> StringBuffer
+   -> StringBuilder
+
+java.util
+   -> StringTokenizer
+   -> StringJoiner 
+
+String Class: 
+  -> 
+
+
+String Literal Process: 
+    
+   String object_name = "Aplha";
+
+using new Operator : 
+ 
+  String object_name = new String("Aplha");
+
+
+
+ public java.lang.String toString();
+
+
+
+
+
+
+
+write a java program to decode text by following below logic
+input :
+'a45-js6-458a'
+Output:
+'245-576-4582'
+
+
+ABC - 2
+DEF - 3
+GHI - 4
+JKL - 5
+MNO - 6
+PQRS - 7
+TUV - 8
+WXYZ - 9
+
+
+String Comparisons: 
+
+-> 
+
+public Boolean equals(java.lang.String)
+public Boolean equalsIgnoreCase(java.lang.String)
+ 
+
+public int compareTo(java.lang.String)
+public int compareToIgnoreCase(java.lang.String)
+
+
+
+
+
+
+String str = "Java",str2 = "Java";
+		
+		String str3 = new String("Java"),str4 = new String("Java");;
+		
+
+
+
+Java - 21
+
+Upper case Alphabets - 1
+Lower case Alphabets - 3
+Symbols - 3
+Numbers - 2
+Sum : 3
+
+
+What is the default value of a boolean variable in Java? 
+   - A) false
+   - B) true
+   - C) 0
+   - D) null
+
+
+What data type would you use to represent a 32-bit integer in Java? 
+   - A) int
+   - B) long
+   - C) short
+   - D) byte
+StringBuffer :
+   Generates Mutable objects
+   
+
+StringBuffer obj = new StringBuffer();
+
+ -> capacity : 16 
+
+StringBuffer obj2 = new StringBuffer(int);
+
+ -> capacity : parameter value
+
+StringBuffer obj3 = new StringBuffer(java.lang.String);
+
+ -> capacity : 16 + length of String
+
+-> Currentcap*2 +2
+
+Note: StringBuffer is an synchronized class
+
+Methods: 
+-> 
+
+ 
+
+str= Java Programming
+     0              15
+
+arr  = ['a','c','d','f','h','i']
+         0   1   2   3   4   5
+
+
+Javadfh Programming
+
+str.insert(4,arr,2,5)
+
+
+
+
+
+
+
+
+
+
+
+
+String Class: 
+ -> Generates Immutable objects
+ -> Literal process, Using new Operator
+
+StringBuffer:
+ -> Generates Mutable Objects
+ -> It is a Synchronized class
+
+StringBuilder: 
+ -> Generates Mutable Objects
+ -> It is a non synchronized class
+
+StringTokenizer Class: 
+ -> it is from java.util package
+
+ -> it help to divide the string based on delimeter(Seperator)
+    which are called as tokens 
+
+
+StringTokenizer obj = new StringTokenizer(java.lang.String)
+StringTokenizer obj = new StringTokenizer(java.lang.String,java.lang.String)
+
+StringJoiner: 
+ -> joins the String based on Delimeter
+
+
+StringJoiner object = new StringJoiner(java.lang.String)
+
+
+
+
+Object Oriented Programming: 
+
+ -> Class
+ -> Object
+ -> Encapsulation -> Binding multiple component into a single component(Use access Specifiers)
+                  -> Class
+
+
+Importing, References
+
+
+A ob = new A()
+B ob2 = new B()
+
+A ob = new A(new B())
+
+
+Inheritance: 
+ -> The process sharing members from one component to another component using keywords 
+
+=>
+	            Keyword
+Class to Class   -  extends 
+
+class A
+{
+
+
+}
+
+
+class B extends A{
+
+
+} 
+
+Note: In inheritance, we always create object for child class. 
+
+
+
+
+
+
+
+
+
+
+
+You work for a company that wants to manage employee information using a simple Java program. The company has two types of employees: Full-Time and Part-Time. Each employee has a name and a salary. The program should be able to store this information and display it.
+Objective:
+Create a base class Employee: This class will hold the common attributes (name and salary) and methods to manage these attributes.
+Create derived classes FullTimeEmployee and PartTimeEmployee: These classes will inherit from Employee and will have the capability to display their details with a specific message indicating their employment type.
+Implement methods to display details: Each class will have a method to display the details of the employee, ensuring that the correct type (full-time or part-time) is indicated.
+
+Steps and Implementation:
+Define the Base Class Employee:
+Attributes: name and salary.
+Methods: Constructor to initialize the attributes and a method displayDetails to print the employee's details.
+
+Define the Derived Classes FullTimeEmployee and PartTimeEmployee:
+Each class will inherit the attributes and methods from the Employee class.
+Override the displayDetails method to include specific messages for full-time and part-time employees.
+
+Main Class to Demonstrate Inheritance:
+Create instances of FullTimeEmployee and PartTimeEmployee.
+Call the displayDetails method on each instance to demonstrate the functionality
+
+You are developing a simple system to manage the billing for a restaurant. The restaurant serves two types of customers: DineInCustomer and TakeawayCustomer. All customers have common attributes like name and customerId. The total bill for each customer includes the cost of their orders. For dine-in customers, there is an additional service charge of 10%, while for takeaway customers, there is no service charge.
+
+Objective:
+Create a base class Customer to store the common attributes (name and customerId) and methods.
+Create derived classes DineInCustomer and TakeawayCustomer that inherit from Customer and include specific attributes and methods to calculate the total bill.
+Implement methods to display the details of each customer and calculate their total bill.
+
+Steps and Implementation:
+
+Define the Base Class Customer:
+Attributes: name, customerId, and orderAmount.
+Methods: Constructor to initialize the attributes and a method to display customer details.
+
+Define the Derived Classes DineInCustomer and TakeawayCustomer:
+DineInCustomer class with an additional method to calculate the total bill including a service charge.
+TakeawayCustomer class with a method to calculate the total bill without any additional charges.
+
+Main Class to Demonstrate Inheritance:
+Create instances of DineInCustomer and TakeawayCustomer.
+Call the methods to display their details and calculate their total bill.
+
+Total Bill=Order Amount+(Order Amount×SERVICE_CHARGE_RATE)
+
+
+
+
+
+
+
+
+
+Polymorphism: 
+ ->one in many forms
+
+-> Method Overriding
+    
+-> Method Overloading
+
+-> Constructor Overloading
+
+
+Method Overriding: 
+
+if a parent class and child class have a method with same method signature(return type, paralist, METHOD NAME), then , parent class method body will be overridden by child class method body at compile time is known as Method Overriding.
+
+
+Method Overloading : 
+ -> if a class contains more than one method with same name but different parameter list is known as method overloading
+
+Note: Here, Priority not given to return type
+
+
+Constructor Overloading: 
+
+ -> class which contain more than one constructor but different paralist is known as constructor overloading.
+
+ 
+
+  
+Default Package : java.lang
+
+Parent class for all classes : Object
+
+
+1-Design a class Circle having radius(type float) as a instance variable and make following member methods
+a) Zero argument and parameterized constructors
+b) Override String toString() method return radius of Circle object
+c) Override boolean equals(Circle object) method to check that two circle object are same or not.
+d) Write method that will return area of Circle(no argument)
+e) Write method that will take one Circle object as argument and return its area .
+
+
+Design a class Point with two double x and y as instance variable such that object of this class will represent a point of coordinate system and make following member
+methods.
+a) Zero argument and parameterized constructors
+b) Write a method that will take one Point as argument and print its quadrant or lies on X-axis or Y-axis or origin
+c) Write a method that will take two Point as a argument and return center point of these points
+d) Write a method that will take two Point as a argument and return distance between these points
+e) Write a method that will take three Point as a argument and return 1 if they are in straight line otherwise return 0
+f) Override String toString() to return values of Point
+
+
+Types of Inheritance : 
+ -> 
+
+Single Inheritance
+
+Multi Level Inheritance
+
+Hierarchal Inheritance
+
+Hybrid Inheritance
+
+Multiple Inheritance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blocks:
+  -> statements written between on curly braces is knowns as block
+
+-> classified into few types: 
+  -> some are
+
+  static block
+  instance block
+  try block
+  catch block
+  finally block
+  synchronized block
+
+static block : 
+ 
+   -> if a block is declared with static keyword
+  
+ static 
+ {
+    //statements
+ }
+
+instance Block : 
+  -> Block declared without static keyword
+
+   {
+     //statements
+   }
+
+
+
+
+
+Interface:  
+ -> 
+access_modifier S/I return_type method_name(paralist)
+{
+	
+}
+
+
+abstract -> instance
+
+reference -> constructor
+
+constructor -> X
+
+
+
+You are tasked with developing a basic banking system. The system should allow users to perform basic operations such as checking the balance, depositing money, and withdrawing money. To achieve this, you need to define an interface and implement it in a class.
+
+Requirements:
+
+Create an interface BankAccount with the following methods:
+
+double getBalance(): Returns the current balance.
+void deposit(double amount): Deposits the specified amount into the account.
+boolean withdraw(double amount): Withdraws the specified amount from the account. Returns true if the withdrawal is successful, false otherwise.
+
+Implement the BankAccount interface in a class SavingsAccount.
+
+The class should have a private field balance to store the current balance.
+The constructor should initialize the balance to a specified amount.
+Implement the methods defined in the BankAccount interface.
+
+
+Demonstrate the functionality by creating an instance of SavingsAccount and performing various operations.
+
+You are tasked with developing a basic vending machine system. The vending machine should allow users to perform operations such as selecting an item, dispensing an item, and checking the stock of items. To achieve this, you need to define an interface and implement it in a class.
+
+Requirements:
+
+Create an interface VendingMachine with the following methods:
+
+void addItem(String itemName, int quantity): Adds a specified quantity of an item to the vending machine.
+boolean selectItem(String itemName): Selects an item with the given name. Returns true if the item is available and can be dispensed, false otherwise.
+void dispenseItem(String itemName): Dispenses the selected item if available.
+boolean checkStock(String itemName): Checks if an item with the given name is in stock.
+Implement the VendingMachine interface in a class SimpleVendingMachine.
+
+The class should have private fields for the item names, quantities, and a variable to store the selected item.
+Implement the methods defined in the VendingMachine interface.
+Demonstrate the functionality by creating an instance of SimpleVendingMachine and performing various operations.
+
+Concrete Methods: 
+
+ static concrete methods
+
+ private concrete methods
+             -static 
+             - non static 
+ 
+ default concrete method
+
+
+
+Abstract Class : 
+ 
+  -> A class declared with abstract keyword is known as Abstract class
+ 
+ 
+ it hold varaibles, abstract methods, Concrete methods, Constructors, Blocks 
+
+ -> As we have abstract methods in Abstract class, we cannot instantiate object
+
+
+ we use 'extends' keyword to inherit the properties of Abstract class and class which is getting properties is called as Extended Class
+
+Functional Interface : 
+ -> if an interface is build with one abstract method, then is it called as Functional Interface
+
+
+ 
+
+Lambda Expression : 
+ -> 
+ A method which is declared without method name is known as lambda Expression 
+
+
+(paralist) -> { 
+    //Method Body
+ }
+
+it works as body for abstract method from an functional interface
+
+
+Arrays: 
+ -> Collection objects which store similar datatype elements
+   or
+ -> Collection of similar datatype elements
+
+ 
+Syntax: 
+   
+  int[] arr = new int[10];
+
+ 
+  datatype[]  arrayname = new datatype[size];  
+  datatype[][] arrayname = new datatype[size][size];
+ 
+ Arrays organize the data based on index 
+
+
+Java Collection Framework(JCF)
+ -> Data Structures 
+
+ Framework : A predefined library of interface and classes which can be ready to develop application known as Framework
+
+-> Java Collection Framework is available from java.util package which has Parent 'Collection<E>' Interface
+
+-> Java Collection framework will work only on Object
+
+Generic Programming : 
+ -> Components which are ready to accepts any type of Object at execution.
+
+
+ -> Generic class
+ -> Generic method
+ -> Generic Interface
+ 
+
+-> Generic Keys: 
+    
+    T -> Type
+    E -> Element
+    K -> Key
+    V -> Value
+
+
+Generic methods : 
+  
+ -> A method which is ready to accept any element at time of Implementation 
+
+    <T> method_name (<E>)
+    {
+	
+    }
+
+-> Generic Class: 
+
+   -> if A class contains Generic Method, Then it called as Generic Class
+  
+   class Class_name<T>
+   {
+
+
+   }
+
+-> Generic Interface: 
+   -> An Interface which is implemented to Generic class is known as Generic Interface
+  
+   public interface Interface_name<T>{	
+      
+   }
+
+
+
+Set<E> Interface: 
+ 
+ -> A interface which doesn't allow duplicates while organising data
+  
+ 
+implementation classes: 
+ 
+ ->HashSet<E> : 
+    -> HashSet<E> Organises data in random order
+
+   HashSet<E> object_name = new HashSet<E>();
+  
+
+ -> LinkedHashSet<E> :
+   
+    -> LinkedHashSet<E> Organises data in Insertion order
+  
+	LinkedHashSet<E> object_name = new LinkedHashSet<E>();
+ 
+ 
+ ->TreeSet<E> : 
+ 
+   -> Organises data in Asending Order
+  
+   TreeSet<E> object_name = new TreeSet<E>();
+
+   -> To organise data TreeSet<E> uses the help of compareTo(T) method from Comparable<E> Interface. 
+
+
+
+List<E> Interface : 
+ 
+  -> List<E> Interface allows duplicate values.
+
+
+ArrayList<E> Class: 
+  -> Organises data based on index value and it is non synchronized class
+
+  ArrayList<E> object_name = new ArrayList<E>();
+
+LinkedList<E> Class: 
+  -> Organises data without index value and creates connection with new member with address
+
+  LinkedList<E> object_name = new LinkedList<E>();
+
+Vector<E> Class: 
+  -> Organises data based on index value and it is synchronized class
+  -> It is deprecated from java 5
+   
+ Vector<E> Object_name = new Vector<E>();
+ 
+ Stack<E> Class: 
+ 
+  -> Stack organises data by following An algorithm Last In First Out(LIFO) 
+
+  Stack<E> object_name = new Stack<E>()
+
+
+
+
+
+   
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+Imagine you are working for a library management system. The library has a collection of books, each identified by a unique ISBN number. The system needs to manage the following functionalities:
+
+Add a new book to the library: Each book has a unique ISBN, title, author, and genre. If a book with the same ISBN already exists, it should not be added again.
+
+Remove a book from the library: Given an ISBN, remove the corresponding book from the library.
+
+Search for books by author: Given an author's name, return a list of books written by that author.
+
+List all books in a specific genre: Given a genre, return a list of all books in that genre.
+
+Display all books sorted by title: Display all books currently in the library, sorted alphabetically by their title.
+
+Requirements:
+Use a Set to store unique ISBN numbers to ensure no duplicate books are added.
+Use a List to store the details of each book, allowing for ordered retrieval and sorting.
+Implement the following functionalities in a class called LibraryManager.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
