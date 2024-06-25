@@ -1062,24 +1062,6 @@ Vector<E> Class:
   Stack<E> object_name = new Stack<E>()
 
 
-
-
-
-   
-
- 
-
-
- 
-
-
-
-
-
-
-
-
-
 Imagine you are working for a library management system. The library has a collection of books, each identified by a unique ISBN number. The system needs to manage the following functionalities:
 
 Add a new book to the library: Each book has a unique ISBN, title, author, and genre. If a book with the same ISBN already exists, it should not be added again.
