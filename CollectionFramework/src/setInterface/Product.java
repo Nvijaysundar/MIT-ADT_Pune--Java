@@ -1,12 +1,8 @@
 package setInterface;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Scanner;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
-public class Product {
+public class Product implements Comparable<Product>{
 	String pname,id;
 	Float pprice;
 	Integer pqty;
@@ -67,6 +63,12 @@ public class Product {
 		int qty = Integer.parseInt(sc.nextLine());
 		
 		return new Product(pname, id, price, qty);
+	}
+
+	@Override
+	public int compareTo(Product o) {
+		
+		return Float.compare(this.pprice, o.pprice);
 	}
 	
 }
